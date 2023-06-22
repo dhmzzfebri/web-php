@@ -1,6 +1,9 @@
 <?php
     require_once('_koneksi.php');
     session_start();
+    $id_siswa = $_SESSION['nis'];
+    $query = "SELECT*FROM siswa where nis";
+    $datasiswa1 = mysqli_query($conn,$query);
 
 ?>
 <!DOCTYPE html>
@@ -91,7 +94,7 @@
                             <div class="row mb-3">
                                 <label for="inputPassword3" class="col-sm-2 col-form-label">Alamat</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputPassword3" value="<?=$_SESSION['alamat'];?>" name="alamat" ;>
+                                    <input type="text" class="form-control" id="inputPassword3" value="<?=$_SESSION['alamat'];?>" name="alamat" >
                                 </div>
                             </div>
                             <div class="row mb-3">

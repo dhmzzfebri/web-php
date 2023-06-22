@@ -42,8 +42,7 @@
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-2 col-form-label">Nis</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputEmail3" value="<?=$siswa['nis']; ?>" name="nis" >
-                                    <input type="hidden" value="<?=$siswa['id_siswa']; ?>" name="id_siswa">
+                                    <input type="text" class="form-control" id="inputEmail3" value="<?=$siswa['nis'];?>"  name="nis">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -73,7 +72,7 @@
                             <div class="row mb-3">
                                 <label for="inputPassword3" class="col-sm-2 col-form-label">Tahun masuk</label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" id="inputPassword3" value="<?=$siswa['tahun_masuk'];?>" name="tahun masuk" >
+                                    <input type="number" class="form-control"  value="<?=$siswa['tahun_masuk'];?>" name="tahun masuk" >
                                 </div>
                             </div>
                             <div class="row mb-3">
